@@ -1,14 +1,14 @@
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
 
-body{
-    font-size: 62.5%;
-    box-sizing: border-box;
-}
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layouts/grid";
+
+@import "pages/home";
 
 

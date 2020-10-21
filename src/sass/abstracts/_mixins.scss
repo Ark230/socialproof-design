@@ -1,0 +1,22 @@
+@mixin clearfix{
+    &::after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+
+}
+
+@mixin ratingElementsPosition($number){
+    .stars-#{$number}{
+        margin-bottom: 0;
+        display: inline-block;
+        margin-left: .35rem;
+    }
+    p{
+        text-align: center;
+        display: inline-block;
+        color: $color-primary-magenta;
+        margin-left: 1.5rem;
+    }
+}

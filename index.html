@@ -12,9 +12,15 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="src/css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Spartan" rel="stylesheet">
+    <script src="./src/js/main.js"></script>
+
     <title>Frontend Mentor | Social proof section</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 
     <style>
       .attribution {
         font-size: 11px;
@@ -24,9 +30,102 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+  -->
   </head>
   <body>
-    10,000+ of our users love our products.
+    <main>
+
+      <div class="main-container">
+        <img class="pattern-top" src="./src/assets/images/bg-pattern-top-desktop.svg" alt="pattern top">
+        
+        
+        <div class="row">   
+          <div class="col-1-of-2">
+            <h1 class="heading-primary">10.000+ of our users love our products.</h1>
+            <h2 class="heading-secondary">We only provide great products combined with excellent customer service.
+              See what our satisfied customers are saying about our services.</h2>
+          </div>
+
+         
+          <div class="col-1-of-2">
+            <div class="star-rating">
+                <div class="star-rating--1">
+                  <img class="stars-1" src="./src/assets/images/icon-star.svg" alt="star icon"/>
+                  <p>Rated 5 Stars in Reviews</p>
+                </div>
+                <div class="star-rating--2">
+                  <img class="stars-2" src="./src/assets/images/icon-star.svg" alt="star icon"/>
+                  <p>Rated 5 Stars in Report Guru</p>
+                </div>
+                <div class="star-rating--3">
+                  <img class="stars-3" src="./src/assets/images/icon-star.svg" alt="star icon"/>
+                  <p>Rated 5 Stars in BestTech</p>
+                </div>
+            </div>
+          </div>     
+        </div>
+       
+       
+
+        <div class="section-comments">
+          <div class="card--1 u-margin-bottom-small">
+            <div class="card__content">
+
+              <div class="card__content--header u-margin-bottom-small">
+                <img src="./src/assets/images/image-colton.jpg" alt="person photo" class="commentor-portrait">
+        
+                <div class="heading-text">
+          
+                        <p class="primary">
+                          Colton Smith
+                      </p>
+                    <p class="secondary u-margin-bottom-small">
+                        Veryfied Buyer
+                    </p>   
+                </div>
+                
+              </div>
+              <div class="card__content--footer">
+                <p> 
+                  "We needed the same printed design as the one we had ordered a week prior.
+                  Not only did they find the original order, but we also received it in time.
+                  Excellent!"
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card--2 u-margin-bottom-small">
+            <div class="card__content">
+              <p>
+                "Customer service is always excellent and very quick turn around. Completely
+                delighted with the simplicity of the purchase and the speed of delivery."
+              </p>
+            </div>
+          </div>
+          <div class="card--3">
+            <div class="card__content">
+                <p>
+                "Put an order with this company and can only praise them for the very high
+                standard. Will definitely use them again and recommend them to everyone!"  
+                </p>
+            </div>       
+          </div>
+        </div>
+
+
+       
+       
+       
+       
+       
+        <img class="pattern-bottom" src="./src/assets/images/bg-pattern-bottom-desktop.svg" alt="pattern top"> 
+        
+
+      </div>
+     
+      
+    </main>
+   <!-- 10,000+ of our users love our products.
 
     We only provide great products combined with excellent customer service.
     See what our satisfied customers are saying about our services.
@@ -57,5 +156,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    -->
   </body>
 </html>
