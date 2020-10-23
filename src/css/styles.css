@@ -14,7 +14,7 @@ body {
   font-family: 'Spartan', sans-serif; }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 1.2rem; }
 
 .row {
   max-width: 114rem;
@@ -42,13 +42,18 @@ body {
   .row .col-3-of-4 {
     width: calc( 3* ((100% - 3*6rem) / 4) + 2*6rem); }
 
+body {
+  background-color: rgba(147, 123, 146, 0.85); }
+
 .main-container {
-  border: 2px solid #000000;
   height: 40rem;
   padding: 5rem;
   position: relative;
   width: 80rem;
-  height: 50rem; }
+  height: 50rem;
+  box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 1rem; }
   .main-container .pattern-top {
     position: absolute;
     left: 0;
@@ -68,7 +73,7 @@ body {
   .main-container .heading-secondary {
     color: #937b92;
     font-weight: 500;
-    font-size: .8rem;
+    font-size: 1rem;
     width: 29rem; }
   .main-container .star-rating {
     position: absolute;
@@ -132,29 +137,40 @@ body {
         margin-left: 1.5rem; }
   .main-container .section-comments {
     position: relative;
-    border: black solid .25rem; }
-    .main-container .section-comments .card--1 {
+    padding: 2rem; }
+    .main-container .section-comments .card {
+      position: absolute;
+      background-color: #502050;
       border: black solid .05rem;
       padding: 2rem;
-      width: 50%;
+      width: 32%;
+      height: 17rem;
       border-radius: 1rem; }
-    .main-container .section-comments .card--2 {
-      border: black solid .05rem;
-      padding: 2rem;
-      width: 50%;
-      border-radius: 1rem; }
-    .main-container .section-comments .card--3 {
-      border: black solid .05rem;
-      padding: 2rem;
-      width: 50%;
-      border-radius: 1rem; }
-    .main-container .section-comments .card__content {
-      position: relative; }
-      .main-container .section-comments .card__content--header .commentor-portrait {
-        border-radius: 50%;
-        display: inline-block; }
-      .main-container .section-comments .card__content--header .heading-text {
-        display: inline-block;
-        position: absolute;
-        left: 23%;
-        top: 8%; }
+      .main-container .section-comments .card .card__content {
+        position: relative;
+        font-size: .8rem;
+        line-height: 1.3rem; }
+        .main-container .section-comments .card .card__content--header .commentor-portrait {
+          border-radius: 50%;
+          display: inline-block; }
+        .main-container .section-comments .card .card__content--header .heading-text {
+          display: inline-block;
+          position: absolute;
+          left: 30%;
+          top: 15%; }
+          .main-container .section-comments .card .card__content--header .heading-text .primary {
+            color: white; }
+          .main-container .section-comments .card .card__content--header .heading-text .secondary {
+            color: rgba(238, 104, 164, 0.7); }
+        .main-container .section-comments .card .card__content--footer {
+          line-height: 1.5rem;
+          color: #f7f2f7; }
+    .main-container .section-comments .first-position {
+      top: 0;
+      left: 0; }
+    .main-container .section-comments .second-position {
+      top: 30%;
+      left: 35%; }
+    .main-container .section-comments .third-position {
+      top: 70%;
+      left: 70%; }
